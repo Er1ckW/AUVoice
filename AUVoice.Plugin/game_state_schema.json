@@ -1,0 +1,53 @@
+{
+    "gameState": "TASKS",
+    "gameCode": "CODE",
+    "mapId": 0,
+    "self": {
+        "clientId": 123456789,
+        "hostId": 123456789
+    },
+    "players": [
+        {
+            "id": 0,
+            "clientId": 123456789,
+            "name": "Red",
+            "colorId": 0,
+            "hatId": "hat_1",
+            "petId": 0,
+            "skinId": "skin_1",
+            "visorId": "visor_1",
+            "isImpostor": false,
+            "isDead": false,
+            "disconnected": false,
+            "isLocal": true,
+            "position": {
+                "x": 5.5,
+                "y": -3.2
+            },
+            "inVent": false
+        },
+        {
+            "id": 1,
+            "clientId": 987654321,
+            "name": "Blue",
+            "colorId": 1,
+            "hatId": "hat_2",
+            "petId": 2,
+            "skinId": "skin_None",
+            "visorId": "visor_None",
+            "isImpostor": true,
+            "isDead": false,
+            "disconnected": false,
+            "isLocal": false,
+            "position": {
+                "x": 12.0,
+                "y": 4.1
+            },
+            "inVent": true
+        }
+    ],
+    "gameData": {
+        "commsSabotaged": false,
+        "meetingHudState": 4
+    }
+}

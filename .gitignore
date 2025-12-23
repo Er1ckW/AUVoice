@@ -1,0 +1,13 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.DS_Store
+/.idea
+/.git
+/.vscode
+/.env
+/.vs
+/.vs/
+LogOutput.log

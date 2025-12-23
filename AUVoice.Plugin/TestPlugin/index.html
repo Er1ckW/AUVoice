@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUVoice WebSocket Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AUVoice Plugin Tester</h1>
+            <div id="connection-status" class="status disconnected">Disconnected</div>
+        </header>
+
+        <main>
+            <section class="control-panel">
+                <input type="text" id="ws-url" value="ws://127.0.0.1:7878/">
+                <button id="connect-btn">Connect</button>
+                <button id="disconnect-btn" disabled>Disconnect</button>
+            </section>
+
+            <div class="dashboard">
+                <section class="game-info">
+                    <h2>Game State</h2>
+                    <div class="info-grid">
+                        <div class="info-item"><strong>State:</strong> <span id="game-state">-</span></div>
+                        <div class="info-item"><strong>Code:</strong> <span id="game-code">-</span></div>
+                        <div class="info-item"><strong>Map ID:</strong> <span id="map-id">-</span></div>
+                        <div class="info-item"><strong>Comms:</strong> <span id="comms-status">-</span></div>
+                    </div>
+                </section>
+
+                <section class="player-list">
+                    <h2>Players (<span id="player-count">0</span>)</h2>
+                    <table id="players-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Position (X, Y)</th>
+                                <th>Local</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Players will be injected here -->
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="raw-data">
+                    <h2>Raw JSON (Latest)</h2>
+                    <pre id="json-output">Waiting for data...</pre>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
